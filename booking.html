@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agendar — Nome da Barbearia</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Nome da Barbearia</a>
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="services.html">Serviços</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+        <a class="btn btn-primary" href="booking.html">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Agende seu horário</h1>
+    <p>Use o calendário abaixo para escolher dia e horário. Para sincronizar com Google Calendar, conecte sua conta no Calendly (configurações do Calendly).</p>
+
+    <!-- Substitua o data-url pelo seu Calendly (ex: https://calendly.com/seu_usuario) -->
+    <div class="calendly-wrapper">
+      <div class="calendly-inline-widget" data-url="https://calendly.com/SEU_USUARIO" style="min-width:320px;height:700px;"></div>
+    </div>
+
+    <p class="muted">Nota: este site é um demo estático. Para receber confirmações por e‑mail e sincronização de calendários, conecte sua conta no Calendly e personalize o link acima.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Nome da Barbearia</div>
+  </footer>
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

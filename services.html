@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Serviços — Nome da Barbearia</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Nome da Barbearia</a>
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="services.html">Serviços</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+        <a class="btn btn-primary" href="booking.html" id="booking-link">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Nossos serviços</h1>
+    <ul class="services-list">
+      <li><strong>Corte Tradicional</strong> — R$ XX • 30 min</li>
+      <li><strong>Barba</strong> — R$ XX • 30 min</li>
+      <li><strong>Combo</strong> (Corte + Barba) — R$ XX • 60 min</li>
+      <li><strong>Design de Barba</strong> — R$ XX • 45 min</li>
+    </ul>
+    <p><a class="btn" href="booking.html">Agende um horário</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Nome da Barbearia</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

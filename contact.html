@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Nome da Barbearia</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Nome da Barbearia</a>
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="services.html">Serviços</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="about.html">Sobre</a>
+        <a href="contact.html">Contato</a>
+        <a class="btn btn-primary" href="booking.html" id="booking-link">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Fale conosco</h1>
+    <p class="muted">Use o formulário abaixo para enviar uma mensagem. Este site é estático — para receber mensagens por e‑mail sem backend, configure um serviço como <a href="https://formspree.io/" target="_blank">Formspree</a> ou <a href="https://getform.io/" target="_blank">Getform</a>.</p>
+
+    <section class="contact-wrapper">
+      <div class="contact-info">
+        <h2>Contato rápido</h2>
+        <p><strong>Email:</strong> contato@seudominio.com</p>
+        <p><strong>Telefone:</strong> (00) 00000‑0000</p>
+        <p><strong>Horário:</strong> Seg–Sex: 09:00–19:00 • Sáb: 09:00–16:00</p>
+      </div>
+
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+        <label for="name">Nome</label>
+        <input id="name" type="text" name="name" placeholder="Seu nome" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="seu@exemplo.com" required>
+
+        <label for="phone">Telefone (opcional)</label>
+        <input id="phone" type="tel" name="phone" placeholder="(00) 00000‑0000">
+
+        <label for="service">Serviço (opcional)</label>
+        <select id="service" name="service">
+          <option value="">— Selecionar —</option>
+          <option>Corte Tradicional</option>
+          <option>Barba</option>
+          <option>Combo (Corte + Barba)</option>
+        </select>
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" placeholder="Conte-nos o que precisa..." required></textarea>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Nome da Barbearia</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
